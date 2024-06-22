@@ -15,3 +15,13 @@ echo "Product: $product"
 echo "Quotient: $quotient"
 echo "Remainder: $remaider"
 
+let sum2=num1+num2
+echo $sum2
+
+sum2=$(expr $num1 + $num2)
+echo $sum2
+
+num1=10.5
+num2=2.5
+sum=$(echo "$num1 + $num2" | bc)
+echo $sum
